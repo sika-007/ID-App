@@ -1,0 +1,25 @@
+Photo
+ - must be a portrait where subject keeps a straight face
+
+Full name
+  - First name
+  - Last name
+  - other names
+
+Date of Birth
+  - Month
+  - Day
+  - Year
+
+Place of birth
+
+Nationality
+
+Sex
+
+Passport Number
+
+Passport's date of issue
+
+Passport's expiry date
+
