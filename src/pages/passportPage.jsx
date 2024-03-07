@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import Passport from "../components/Passport";
+import PropTypes from "prop-types";
 
 // Note that this data can and most likely should come via the backend API
 const passportData = {
@@ -15,7 +17,11 @@ const passportData = {
   expiryDate: "01/01/2030",
 };
 
-const passportPage = () => {
+const PassportPage = ({ setSelectedPage }) => {
+  useEffect(() => {
+    setSelectedPage("passport");
+  }, []);
+
   return (
     <div className="container mx-auto mt-8 max-w-[1000px]">
       <Passport {...passportData} />
@@ -23,4 +29,8 @@ const passportPage = () => {
   );
 };
 
-export default passportPage;
+PassportPage.propTypes = {
+  setSelectedPage: PropTypes.function,
+};
+
+export default PassportPage;
